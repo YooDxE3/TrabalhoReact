@@ -13,6 +13,13 @@
       "nome": "teste adm",
       "permissoes": "admin",
       "id": 2
+    },
+    {
+      "email": "andreox27@gmail.com",
+      "password": "$2a$10$k36aOnzKLisFRyydnyanR.Opk3Ss2RyEjboVSN0ggI/qJEWZOZuf.",
+      "nome": "André",
+      "permissoes": "admin",
+      "id": 3
     }
   ],
   "clientes": []

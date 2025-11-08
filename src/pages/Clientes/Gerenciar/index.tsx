@@ -98,104 +98,156 @@ export default function GerenciarUsuarios() {
 
     return (
         <>
-            <h1>Cliente</h1>
+    <h1>Cliente</h1>
 
-            <form
-                noValidate
-                className="needs-validation g-3 row"
-                ref={refForm}
-                onSubmit={submitForm}
-            >
-                <div className="col-md-12">
-                    <label
-                        htmlFor="nome"
-                        className="formLabel"
-                    >
-                        Nome
-                    </label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Digite seu nome"
-                        id="nome"
-                        required
-                    />
-                    <div className="invalid-feedback">
-                        Por favor digite seu nome.
-                    </div>
-                </div>
-                <div className="col-md-12">
-                    <label
-                        htmlFor="email"
-                        className="formLabel"
-                    >
-                        Email
-                    </label>
-                    <input
-                        type="email"
-                        className="form-control"
-                        placeholder="Digite seu email"
-                        id="email"
-                        required
-                    />
-                    <div className="invalid-feedback">
-                        Por favor digite seu email.
-                    </div>
-                </div>
-                <div className="col-md-12">
-                    <label
-                        htmlFor="permissoes"
-                        className="formLabel"
-                    >
-                        Tipo
-                    </label>
-                    <select
-                        className="form-select"
-                        defaultValue={""}
-                        id="permissoes"
-                        required
-                    >
-                        <option value={""}>Selecione o Tipo</option>
-                        <option value={"admin"}>Admin</option>
-                        <option value={"colaborador"}>Colaborador</option>
-                    </select>
-                    <div className="invalid-feedback">
-                        Por favor selecione uma permissão.
-                    </div>
-                </div>
-                <div className="col-md-12">
-                    <label
-                        htmlFor="password"
-                        className="formLabel"
-                    >
-                        Senha
-                    </label>
-                    <input
-                        type="password"
-                        className="form-control"
-                        placeholder="Digite sua senha"
-                        id="password"
-                        required
-                    />
-                    <div className="invalid-feedback">
-                        Por favor digite sua senha.
-                    </div>
-                </div>
+    <form
+        noValidate
+        className="needs-validation g-3 row"
+        ref={refForm}
+        onSubmit={submitForm}
+    >
+        <div className="col-md-12">
+            <label htmlFor="nomeInt" className="formLabel">Nome</label>
+            <input
+                type="text"
+                className="form-control"
+                placeholder="Digite seu nome completo"
+                id="nomeInt"
+                required
+            />
+            <div className="invalid-feedback">Por favor, digite seu nome.</div>
+        </div>
 
-                <div className="col-md-12">
+        <div className="col-md-6">
+            <label htmlFor="cpf" className="formLabel">CPF</label>
+            <input
+                type="text"
+                className="form-control"
+                placeholder="Digite seu CPF"
+                id="cpf"
+                maxLength={14}
+                required
+            />
+            <div className="invalid-feedback">Por favor, digite um CPF válido.</div>
+        </div>
 
-                    <button
-                        className="btn"
-                        type="button"
-                    >Voltar</button>
+        <div className="col-md-6">
+            <label htmlFor="dataNascimento" className="formLabel">Data de Nascimento</label>
+            <input
+                type="date"
+                className="form-control"
+                id="dataNascimento"
+                required
+            />
+            <div className="invalid-feedback">Por favor, selecione a data de nascimento.</div>
+        </div>
 
-                    <button
-                        className="btn btn-primary"
-                        type="submit"
-                    >Salvar</button>
-                </div>
+        <div className="col-md-6">
+            <label htmlFor="email" className="formLabel">E-mail</label>
+            <input
+                type="email"
+                className="form-control"
+                placeholder="Digite seu e-mail"
+                id="email"
+                required
+            />
+            <div className="invalid-feedback">Por favor, digite um e-mail válido.</div>
+        </div>
 
-            </form>
-        </>
+        <div className="col-md-6">
+            <label htmlFor="telefone" className="formLabel">Telefone</label>
+            <input
+                type="tel"
+                className="form-control"
+                placeholder="(00) 00000-0000"
+                id="telefone"
+                required
+            />
+            <div className="invalid-feedback">Por favor, digite seu telefone.</div>
+        </div>
+
+        <div className="col-md-8">
+            <label htmlFor="logaoduro" className="formLabel">Logradouro</label>
+            <input
+                type="text"
+                className="form-control"
+                placeholder="Rua, avenida, etc."
+                id="logaoduro"
+                required
+            />
+            <div className="invalid-feedback">Por favor, digite o logradouro.</div>
+        </div>
+
+        <div className="col-md-4">
+            <label htmlFor="numero" className="formLabel">Número</label>
+            <input
+                type="text"
+                className="form-control"
+                placeholder="Número"
+                id="numero"
+                required
+            />
+            <div className="invalid-feedback">Por favor, informe o número.</div>
+        </div>
+
+        <div className="col-md-6">
+            <label htmlFor="complemento" className="formLabel">Complemento</label>
+            <input
+                type="text"
+                className="form-control"
+                placeholder="Apartamento, bloco, etc. (opcional)"
+                id="complemento"
+            />
+        </div>
+
+        <div className="col-md-6">
+            <label htmlFor="bairro" className="formLabel">Bairro</label>
+            <input
+                type="text"
+                className="form-control"
+                placeholder="Digite o bairro"
+                id="bairro"
+                required
+            />
+            <div className="invalid-feedback">Por favor, digite o bairro.</div>
+        </div>
+
+        <div className="col-md-8">
+            <label htmlFor="cidade" className="formLabel">Cidade</label>
+            <input
+                type="text"
+                className="form-control"
+                placeholder="Digite a cidade"
+                id="cidade"
+                required
+            />
+            <div className="invalid-feedback">Por favor, digite a cidade.</div>
+        </div>
+
+        <div className="col-md-4">
+            <label htmlFor="estado" className="formLabel">Estado</label>
+            <input
+                type="text"
+                className="form-control"
+                placeholder="UF"
+                id="estado"
+                maxLength={2}
+                required
+            />
+            <div className="invalid-feedback">Por favor, digite o estado (UF).</div>
+        </div>
+
+        <div className="col-md-12 d-flex justify-content-between mt-4">
+            <button className="btn btn-secondary" type="button">
+                Voltar
+            </button>
+
+            <button className="btn btn-primary" type="submit">
+                Salvar
+            </button>
+        </div>
+    </form>
+</>
+
     )
 }
