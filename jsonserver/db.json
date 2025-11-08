@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "teste@gmail.com",
+      "password": "$2a$10$xduDKYDM9crkElzNkPUmNOll/842korJwSmBoPkBZT5FusYjGBjcm",
+      "nome": "Teste",
+      "permissoes": "colaborador",
+      "id": 1
+    },
+    {
+      "email": "testeadm@gmail.com",
+      "password": "$2a$10$nunsaHh9t1RLyZTjEN0J.O7VBWTxE1iNMeS.obxtOW2PDA9RKvuaK",
+      "nome": "teste adm",
+      "permissoes": "admin",
+      "id": 2
+    }
+  ],
+  "clientes": []
+}
