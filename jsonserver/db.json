@@ -22,5 +22,20 @@
       "id": 3
     }
   ],
-  "clientes": []
+  "clientes": [
+    {
+      "nome": "Cristiano Ronaldo",
+      "cpf": "88563214957",
+      "dataNascimento": "1982-02-14",
+      "email": "neyma@gmail.com",
+      "telefone": "11932658741",
+      "logradouro": "Porto",
+      "numero": "5",
+      "complemento": "Real Madrid",
+      "bairro": "Madrid",
+      "cidade": "Madrid",
+      "estado": "ES",
+      "id": 4
+    }
+  ]
 }

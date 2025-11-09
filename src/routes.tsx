@@ -6,7 +6,9 @@ import {
 import { Home } from "./pages/Home"
 import { Categorias } from "./pages/Categorias"
 import { Usuarios } from "./pages/Usuarios"
+import { Clientes } from "./pages/Clientes"
 import GerenciarUsuarios from "./pages/Usuarios/Gerenciar"
+import GerenciarClientes from "./pages/Clientes/Gerenciar"
 import Login from "./pages/Login"
 
 
@@ -29,6 +31,15 @@ export const Rotas = () => {
                 <Route
                     path="/usuarios/:id"
                     element={<GerenciarUsuarios />}
+                />
+
+                <Route
+                    path="/clientes"
+                    element={<Clientes />}
+                />
+                <Route
+                    path="/clientes/:id"
+                    element={<GerenciarClientes />}
                 />
                 
                 <Route
